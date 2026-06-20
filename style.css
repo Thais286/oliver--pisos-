@@ -9,14 +9,30 @@ body {
 
 .navbar .logo {
     color: rgb(13, 135, 44);
-    font-size: 35px;
-    font-weight: bolder;
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 1px;
 }
 
 .navbar ul {
     display: flex;
     list-style: none;
     gap: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #116f0d;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 25px;
+    transition: .3s;
+}   
+
+.navbar ul li a:hover {
+    background-color: #116f0d;
+    color: white;
 }
 
 .brand {
