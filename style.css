@@ -261,24 +261,30 @@ footer {
 /* === CELULARES (Máximo de 600px) === */
 /* --------------------------------- */
 @media screen and (max-width: 600px) {
-    body {
+    html, body {
         margin: 0;
-        padding: 10px;
-        padding-bottom: 250px;
+        padding: 0;
+        overflow-x: hidden;
+        width: 100%;
     }
 
+    body {
+        padding-bottom: 100px;
+    }
+
+    /* ===== LOGO MENORA ===== */
     .navbar .logo {
-        font-size: 30px;
+        font-size: 22px;
         text-align: center;
         display: block;
-        margin-bottom: 15px;
+        margin: 0 auto 8px auto;
     }
 
     .pesquisa {
         flex-direction: column;
         width: 100%;
-        gap: 10px;
-        margin-bottom: 20px;
+        gap: 8px;
+        margin-bottom: 12px;
     }
 
     .pesquisa input {
@@ -290,89 +296,105 @@ footer {
     .navbar ul {
         flex-direction: column;
         align-items: center;
-        gap: 10px;
+        gap: 8px;
         padding: 0;
+        margin: 0;
     }
 
     .navbar ul li a {
         display: block;
         width: 100%;
         text-align: center;
-        padding: 8px 20px;
+        padding: 6px 16px;
+        font-size: 16px;
     }
 
-    /* FORÇANDO 2 COLUNAS IGUAIS */
-    /* FORÇANDO 1 COLUNA (LISTA VERTICAL) NO CELULAR */
-.product-grid {
-    display: grid !important;
-    grid-template-columns: 1fr !important;  /* <-- 1 coluna só */
-    gap: 15px !important;
-    width: 100% !important;
-    padding: 10px !important;
-    box-sizing: border-box !important;
-}
-
-.card.produtos-item {
-    width: 100% !important;
-    max-width: 100% !important;
-    margin: 0 !important;
-    padding: 15px !important;
-    box-sizing: border-box !important;
-}
-
-/* Imagem grande e bem visível */
-.card.produtos-item img,
-.product-grid img {
-    width: 100% !important;
-    max-width: 320px !important;
-    height: auto !important;
-    max-height: 260px !important;   /* antes era 150px (ficava pequeno) */
-    object-fit: contain !important; /* mostra o piso inteiro, sem cortar */
-    border-radius: 12px !important;
-    margin: 0 auto !important;
-}
-
-.card-info h3 {
-    font-size: 18px !important;     /* texto maior, legível */
-}
-
-.preco {
-    font-size: 18px !important;
-    margin-bottom: 12px !important;
-}
-
-.card-bootom input[type="number"],
-.card-bootom button {
-    width: 100% !important;
-    height: 44px !important;
-    font-size: 16px !important;
-    box-sizing: border-box !important;
-}
-
-    .contato {
+    /* ===== GRID 1 COLUNA ===== */
+    .product-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 12px;
         width: 100%;
-        font-size: 16px;
+        padding: 8px;
         box-sizing: border-box;
     }
 
-    .img-conteudo, .banner img, .info-imagem {
+    .card.produtos-item {
         width: 100%;
-        margin: 10px auto;
-        padding: 0;
-    }
-    
-    .carrinho {
-        width: 90%;
-        top: auto;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        margin: 0 auto;
+        max-width: 100%;
+        margin: 0;
         padding: 12px;
-        border-radius: 15px 15px 0 0;
-        box-shadow: 0 -5px 15px rgba(0,0,0,0.2);
+        box-sizing: border-box;
+    }
+
+    /* ===== IMAGENS ===== */
+    .card.produtos-item img,
+    .product-grid img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        max-height: 220px;
+        object-fit: contain;
+        border-radius: 12px;
+    }
+
+    .card-info h3 {
+        font-size: 16px;
+    }
+
+    .preco {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .card-bootom input[type="number"],
+    .card-bootom button {
+        width: 100%;
+        height: 42px;
+        font-size: 15px;
+        box-sizing: border-box;
+    }
+
+    .contato {
+        width: 100%;
+        font-size: 15px;
+        box-sizing: border-box;
+    }
+
+    .img-conteudo,
+    .banner img,
+    .info-imagem {
+        width: 100%;
+        max-width: 100%;
+        margin: 8px auto;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* ===== CARRINHO COMPACTO ===== */
+    .carrinho {
+        width: auto;
+        min-width: 180px;
+        max-width: 260px;
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        left: auto;
+        bottom: auto;
+        background-color: #c6eaca;
+        color: #116f0d;
+        padding: 10px 12px;
+        border-radius: 12px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+        font-size: 14px;
+    }
+
+    .carrinho h3 {
+        font-size: 15px;
+        margin: 0 0 8px 0;
     }
 }
+
 /* --------------------------------- */
 /* === TABLETS (Entre 601px e 1024px) === */
 /* --------------------------------- */
