@@ -55,7 +55,6 @@ function atualizarCarrinho() {
 }
 
 function finalizarPedido() {
-    const entrega = document.getElementById("tipoEntrega").value;
     const pagamento = document.getElementById("pagamento").value;
 
     const nome = document.getElementById("nomeCliente").value;
@@ -69,7 +68,6 @@ function finalizarPedido() {
     });
 
     mensagem += `\n*Total:* R$ ${total.toFixed(2)}\n`;
-    mensagem += `*Entrega:* ${entrega}\n`;
     mensagem += `*Pagamento:* ${pagamento}\n\n`;
     mensagem += `👤 *Cliente:* ${nome}\n`;
     mensagem += `📍 *Endereço:* ${endereco}\n`;
