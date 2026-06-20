@@ -10,7 +10,8 @@ body {
 
 .navbar .logo {
     color: rgb(13, 135, 44);
-    font-size: 40px;
+    justify-content: center;
+    font-size: 15px;
     font-weight: 800;
     letter-spacing: 1px;
 }
@@ -276,6 +277,7 @@ footer {
     .navbar .logo {
         font-size: 22px;
         text-align: center;
+        justify-content: center;
         display: block;
         margin: 0 auto 8px auto;
     }
