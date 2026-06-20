@@ -1,6 +1,6 @@
-/* ==========================================================================
+/* =======================================
    === ESTILOS BASE (DESKTOP) ===
-   ========================================================================== */
+   ====================================== */
 
 body {
     font-family: Arial, sans-serif;
@@ -302,52 +302,52 @@ footer {
     }
 
     /* FORÇANDO 2 COLUNAS IGUAIS */
-    .product-grid {
-        display: grid !important;
-        grid-template-columns: repeat(2, 1fr) !important; 
-        gap: 10px !important;
-        width: 100% !important;
-        padding: 5px !important;
-        box-sizing: border-box !important;
-    }
+    /* FORÇANDO 1 COLUNA (LISTA VERTICAL) NO CELULAR */
+.product-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;  /* <-- 1 coluna só */
+    gap: 15px !important;
+    width: 100% !important;
+    padding: 10px !important;
+    box-sizing: border-box !important;
+}
 
-    /* FORÇANDO OS CARDS A SE ENQUADRAREM NAS COLUNAS */
-    .card.produtos-item {
-        width: 100% !important;
-        max-width: 100% !important;
-        margin: 0 !important;
-        padding: 8px !important;
-        box-sizing: border-box !important;
-    }
-    
-    /* FORÇANDO AS IMAGENS DOS PISOS A SE AJUSTAREM */
-    .card.produtos-item img,
-    .product-grid img {
-        width: 100% !important;
-        max-width: 100% !important;
-        height: auto !important;
-        max-height: 150px !important; /* Limita a altura para não esticar no celular */
-        object-fit: cover !important; /* Faz a imagem preencher o espaço quadradinho sem distorcer */
-        border-radius: 10px !important;
-    }
+.card.produtos-item {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 15px !important;
+    box-sizing: border-box !important;
+}
 
-    .card-info h3 {
-        font-size: 14px !important;
-    }
-    
-    .preco {
-        font-size: 14px !important;
-        margin-bottom: 8px !important;
-    }
+/* Imagem grande e bem visível */
+.card.produtos-item img,
+.product-grid img {
+    width: 100% !important;
+    max-width: 320px !important;
+    height: auto !important;
+    max-height: 260px !important;   /* antes era 150px (ficava pequeno) */
+    object-fit: contain !important; /* mostra o piso inteiro, sem cortar */
+    border-radius: 12px !important;
+    margin: 0 auto !important;
+}
 
-    .card-bootom input[type="number"],
-    .card-bootom button {
-        width: 100% !important;
-        height: 40px !important;
-        margin: 4px 0 !important;
-        font-size: 14px !important;
-        box-sizing: border-box !important;
-    }
+.card-info h3 {
+    font-size: 18px !important;     /* texto maior, legível */
+}
+
+.preco {
+    font-size: 18px !important;
+    margin-bottom: 12px !important;
+}
+
+.card-bootom input[type="number"],
+.card-bootom button {
+    width: 100% !important;
+    height: 44px !important;
+    font-size: 16px !important;
+    box-sizing: border-box !important;
+}
 
     .contato {
         width: 100%;
