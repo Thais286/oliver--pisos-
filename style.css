@@ -303,8 +303,8 @@ footer {
     }
 
     .product-grid {
-        display: flex !important;
-        flex-direction: column !important;
+        display: flex ;
+        flex-direction: column ;
         width: 100%;
          gap: 15px;
     }
