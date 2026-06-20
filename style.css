@@ -109,8 +109,10 @@ section.banner .info-imagem {
 .card.produtos-item {
     background-color: #69b677;
     border-radius: 10px;
+    width: 100%;
     padding: 10px;
     box-shadow: 5px 3px 10px 10px rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -261,7 +263,7 @@ footer {
 /* --------------------------------- */
 @media (max-width: 600px) {
     body {
-        padding: 80px;
+        padding: 10px;
         padding-bottom: 250px;
     }
 
@@ -300,8 +302,16 @@ footer {
     }
 
     .product-grid {
-        grid-template-columns: 1fr;
-        padding: 5px;
+        display: grid;
+        grid-template-columns: 1fr !important;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .produtos-item{
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
     }
 
     .card-bootom input[type="number"],
