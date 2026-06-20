@@ -260,7 +260,7 @@ footer {
 /* --------------------------------- */
 /* === CELULARES (Máximo de 600px) === */
 /* --------------------------------- */
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
     body {
         margin: 0;
         padding: 10px;
@@ -301,40 +301,52 @@ footer {
         padding: 8px 20px;
     }
 
-    /* ALTERADO: Mantido o Grid original mas forçando exatamente 2 colunas */
+    /* FORÇANDO 2 COLUNAS IGUAIS */
     .product-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); 
-        gap: 10px;
-        width: 100%;
-        padding: 0;
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important; 
+        gap: 10px !important;
+        width: 100% !important;
+        padding: 5px !important;
+        box-sizing: border-box !important;
     }
 
-    /* ALTERADO: Ajustada a especificidade seletor para sobrescrever o desktop */
+    /* FORÇANDO OS CARDS A SE ENQUADRAREM NAS COLUNAS */
     .card.produtos-item {
-        width: 100%;
-        max-width: 100%;
-        margin: 0;
-        padding: 8px; /* Reduzido levemente o padding para sobrar mais espaço para a foto */
-        box-sizing: border-box;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 8px !important;
+        box-sizing: border-box !important;
     }
     
-    /* ADICIONADO: Diminui textos e inputs no celular para o card não ficar gigante */
-    .card.produtos-item h3 {
-        font-size: 14px;
+    /* FORÇANDO AS IMAGENS DOS PISOS A SE AJUSTAREM */
+    .card.produtos-item img,
+    .product-grid img {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        max-height: 150px !important; /* Limita a altura para não esticar no celular */
+        object-fit: cover !important; /* Faz a imagem preencher o espaço quadradinho sem distorcer */
+        border-radius: 10px !important;
     }
+
+    .card-info h3 {
+        font-size: 14px !important;
+    }
+    
     .preco {
-        font-size: 14px;
-        margin-bottom: 8px;
+        font-size: 14px !important;
+        margin-bottom: 8px !important;
     }
 
     .card-bootom input[type="number"],
     .card-bootom button {
-        width: 100%;
-        height: 40px;
-        margin: 4px 0;
-        font-size: 14px;
-        box-sizing: border-box;
+        width: 100% !important;
+        height: 40px !important;
+        margin: 4px 0 !important;
+        font-size: 14px !important;
+        box-sizing: border-box !important;
     }
 
     .contato {
@@ -361,7 +373,6 @@ footer {
         box-shadow: 0 -5px 15px rgba(0,0,0,0.2);
     }
 }
-
 /* --------------------------------- */
 /* === TABLETS (Entre 601px e 1024px) === */
 /* --------------------------------- */
