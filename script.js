@@ -94,9 +94,6 @@ function fecharZoom() {
 /*          PESQUISA             */
 /* ============================= */
 
-/* ============================= */
-/* PESQUISA            */
-/* ============================= */
 
 function pesquisarProduto() {
     const termo = document.getElementById("searchInput").value.toLowerCase().trim();
