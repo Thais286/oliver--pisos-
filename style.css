@@ -376,7 +376,7 @@ footer {
         width: auto;
         min-width: 180px;
         max-width: 260px;
-        position: fixed;
+        position: static !important;
         top: 10px;
         right: 10px;
         left: auto;
