@@ -261,7 +261,7 @@ footer {
 /* --------------------------------- */
 @media (max-width: 600px) {
     body {
-        padding: 10px;
+        padding: 80px;
         padding-bottom: 250px;
     }
 
