@@ -8,7 +8,6 @@ body {
     margin: 0;
 }
 
-
 .navbar .logo {
     color: rgb(13, 135, 44);
     font-size: 40px;
@@ -302,24 +301,39 @@ footer {
         padding: 8px 20px;
     }
 
+    /* ALTERADO: Mantido o Grid original mas forçando exatamente 2 colunas */
     .product-grid {
-        display: flex ;
-        flex-direction: column ;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 10px;
         width: 100%;
-         gap: 15px;
+        padding: 0;
     }
 
-    .produtos-item{
+    /* ALTERADO: Ajustada a especificidade seletor para sobrescrever o desktop */
+    .card.produtos-item {
         width: 100%;
         max-width: 100%;
-        margin: 0 auto;
+        margin: 0;
+        padding: 8px; /* Reduzido levemente o padding para sobrar mais espaço para a foto */
+        box-sizing: border-box;
+    }
+    
+    /* ADICIONADO: Diminui textos e inputs no celular para o card não ficar gigante */
+    .card.produtos-item h3 {
+        font-size: 14px;
+    }
+    .preco {
+        font-size: 14px;
+        margin-bottom: 8px;
     }
 
     .card-bootom input[type="number"],
     .card-bootom button {
         width: 100%;
-        height: 45px;
-        margin: 8px 0;
+        height: 40px;
+        margin: 4px 0;
+        font-size: 14px;
         box-sizing: border-box;
     }
 
@@ -360,4 +374,3 @@ footer {
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     }
 }
-
