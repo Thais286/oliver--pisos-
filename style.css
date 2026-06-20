@@ -263,6 +263,7 @@ footer {
 /* --------------------------------- */
 @media (max-width: 600px) {
     body {
+        margin: 0;
         padding: 10px;
         padding-bottom: 250px;
     }
@@ -302,10 +303,10 @@ footer {
     }
 
     .product-grid {
-        display: grid;
-        grid-template-columns: 1fr !important;
-        gap: 15px;
+        display: flex !important;
+        flex-direction: column !important;
         width: 100%;
+         gap: 15px;
     }
 
     .produtos-item{
