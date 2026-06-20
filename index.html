@@ -14,9 +14,9 @@
             <h1 class="logo">Oliver Pisos</h1>
             <div class="pesquisa">
                 <input type="text" id="searchInput" placeholder="🔍Pesquisar produtos...">
-                <button id="searchButton"></button>
+                <button onclick="pesquisarProdutos()">🔍</button>
             </div>
-           <ul class="nav-links">
+           <ul >
              <li><a href="#home">🏠Home</a></li>
             <li><a href="#produtos">🛒Produtos</a></li>
             <li><a href="#sobre">ℹ️Sobre</a></li>
@@ -59,7 +59,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
         </div>
         </section></br></br>
 
-        <section id="produtos" class="produtos">
+        <section id="pisos-laminados" class="produtos">
             
 
             <section class="banner">
@@ -67,7 +67,8 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
 
             <div class="lista-de-produtos">
                 <h1>Nossos Produtos</h1>
-                <h2>Pisos Laminados</h2>
+                <h2 id="pisos laminados">Pisos Laminados</h2>
+
                 <article class="card produtos-item">
 
                     <section id="produtos" class="produtos">
@@ -82,7 +83,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
             
  
                  <!--Piso Laminado Unilim 1-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="unilim">
                 <img src="imagens/unilimcapri.png" alt="Piso laminado cor capri"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     
@@ -103,7 +104,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                         </article>
 
                 <!--Piso Laminado Unilim 2-->
-                        <article class="card produtos-item">
+                        <article class="card produtos-item" id="unilim">
                 <img src="imagens/unilimrapolano.png" alt="Piso laminado cor rapolano"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     <h3>Piso laminado Unilim Click -</h3>
@@ -124,7 +125,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                         </article>
 
                         <!--Piso Laminado Unilim 3-->
-                        <article class="card produtos-item">
+                        <article class="card produtos-item" id="unilim">
                 <img src="imagens/unilimsiena.png" alt="Piso laminado cor siena"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     <h3>Piso laminado Unilim Click -</h3>
@@ -146,7 +147,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                         </article>
 
                         <!--Piso Laminado Unilim 4-->
-                        <article class="card produtos-item">
+                        <article class="card produtos-item" id="unilim">
                 <img src="imagens/unilimsardenha.png" alt="Piso laminado cor sardenha"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     <h3>Piso laminado Unilim Click -</h3>
@@ -181,7 +182,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
 
                             
                             <!--Piso Laminado Impressive 1-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="impresive">
                 <img src="imagens/impresivecarvalhonatural.png" alt="Piso laminado cor carvalho natural"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     <div class="card-bootom"></br>      
@@ -201,7 +202,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
 
 
                         <!--Piso Laminado Impressive 2-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="impresive">
                 <img src="imagens/impresivecarvalhocinzasuave.png" alt="Piso laminado cor carvalho cinza suave"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     <div class="card-bootom"></br>     
@@ -220,7 +221,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                         </article>
 
                         <!--Piso Laminado Impressive 3-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="impresive">
                 <img src="imagens/impressivecarvalhosuavemedio.png" alt="Piso laminado cor carvalho suave medio"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     <div class="card-bootom"></br>     
@@ -239,7 +240,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                         </article>
 
                         <!--Piso Laminado Impressive 4-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="impresive">
                 <img src="imagens/impressivecarvalhoclassiconatural.png" alt="Piso laminado cor carvalho classico natural"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     <div class="card-bootom"></br>      
@@ -269,7 +270,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                      <div class="product-grid" id="productGrid">
 
                      <!--Piso Laminado Primiere plus 0-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="primiere">
                 <img src="imagens/primierecarvalhosacramento.png" alt="Piso laminado cor carvalho sacramento"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     <div class="card-bootom"></br>     
@@ -288,7 +289,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                         </article>
 
                         <!--Piso Laminado Primiere plus 2-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="primiere">
                 <img src="imagens/primiereessencialoak.png" alt="Piso laminado cor essencial oak"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     <div class="card-bootom"></br>      
@@ -307,7 +308,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                         </article>
 
                         <!--Piso Laminado Primiere plus 3-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="primiere">
                 <img src="imagens/primierenewpegasus.png" alt="Piso laminado cor new pegasus"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     <div class="card-bootom"></br>      
@@ -326,7 +327,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                         </article>
 
                         <!--Piso Laminado Primiere plus 4-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="primiere">
                 <img src="imagens/primiereipeabano.png" alt="Piso laminado cor ipe abano"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     <div class="card-bootom"></br>      
@@ -345,7 +346,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                         </article>
 
                         <!--Piso Laminado Primiere plus 5-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="primiere">
                 <img src="imagens/primieremocha.png" alt="Piso laminado cor mocha"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     <div class="card-bootom"></br>      
@@ -364,7 +365,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                         </article>
 
                         <!--Piso Laminado Primiere plus 6-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="primiere">
                 <img src="imagens/primieremalta.png" alt="Piso laminado cor malta"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     <div class="card-bootom"></br>      
@@ -394,7 +395,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                         <div class="product-grid" id="productGrid">
 
                         <!--Piso Laminado Eligna Wide 1-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="eligna-wide">
                 <img src="imagens/elignacastanheiroantigo.png" alt="Piso laminado cor castanheiro antigo restaurado"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     <div class="card-bootom"></br>      
@@ -413,7 +414,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                         </article>
 
                         <!--Piso Laminado Eligna Wide 2-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="eligna-wide">
                 <img src="imagens/elignacarvalhodeserto.png" alt="Piso laminado cor carvalho deserto restaurado"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     <div class="card-bootom"></br>      
@@ -432,7 +433,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                         </article>
 
                         <!--Piso Laminado Eligna Wide 3-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="eligna-wide">
                 <img src="imagens/elignacastanheiroescuro.png" alt="Piso laminado cor castanheiro escuro restaurado"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     <div class="card-bootom"></br>      
@@ -450,7 +451,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                         </article>
 
                         <!--Piso Laminado Eligna Wide 4-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="eligna-wide">
                 <img src="imagens/elignacastanheironatural.png" alt="Piso laminado cor castanheiro natural restaurado"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     <div class="card-bootom"></br>      
@@ -468,7 +469,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                         </article>
 
                         <!--Piso Laminado Eligna Wide 5-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="eligna-wide">
                 <img src="imagens/elignacarvalhoacinzentado.png" alt="Piso laminado cor carvalho acinzentado"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     <div class="card-bootom"></br>      
@@ -486,7 +487,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                         </article>
 
                                <!--Piso Laminado Eligna Wide 7-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="eligna-wide">
                 <img src="imagens/elignacarvalhonatural.png" alt="Piso laminado cor carvalho cafe"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     <div class="card-bootom"></br>      
@@ -504,7 +505,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                         </article>
                              
                         <!--Piso Laminado Eligna Wide 7-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="eligna-wide">
                 <img src="imagens/elignacarvalhocafe.png" alt="Piso laminado cor carvalho cafe"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     <div class="card-bootom"></br>      
@@ -523,7 +524,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                         
 
                         <!--Piso Laminado Eligna Wide 8-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="eligna-wide">
                 <img src="imagens/elignacarvalhoclaro.png" alt="Piso laminado cor carvalho claro"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     <div class="card-bootom"></br>      
@@ -549,7 +550,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                         <div class="product-grid" id="productGrid">
 
                         <!--Piso Laminado Vision 1-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="vision">
                 <img src="imagens/visioncarvalhosereno.png" alt="Piso laminado cor carvalho sereno"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     <div class="card-bootom"></br>      
@@ -567,7 +568,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                         </article>
 
                         <!--Piso Laminado Vision 2-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="vision">
                 <img src="imagens/visioncarvalhoagreste.png" alt="Piso laminado cor carvalho agreste"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     <div class="card-bootom"></br>      
@@ -585,7 +586,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                         </article>
 
                         <!--Piso Laminado Vision 3-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="vision">
                 <img src="imagens/visioncarvalhocubano.png" alt="Piso laminado cor carvalho cubano"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     <div class="card-bootom"></br>      
@@ -603,7 +604,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                         </article>
 
                         <!--Piso Laminado Vision 4-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="vision">
                 <img src="imagens/visioncarvalhopastis.png" alt="Piso laminado cor carvalho pastis"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     <div class="card-bootom"></br>      
@@ -621,7 +622,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                         </article>
 
                         <!--Piso Laminado Vision 5-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="vision">
                 <img src="imagens/visioncamurutefe.png" alt="Piso laminado cor camuru tefe"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     <div class="card-bootom"></br>      
@@ -639,7 +640,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                         </article>
 
                         <!--Piso Laminado Vision 6-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="vision">
                 <img src="imagens/visioncarvalhovitoriano.png" alt="Piso laminado cor carvalho vitoriano"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     <div class="card-bootom"></br>      
@@ -657,7 +658,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                         </article>
 
                         <!--Piso Laminado Vision 7-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="vision">
                 <img src="imagens/visionimbirema.png" alt="Piso laminado cor imbirema"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     <div class="card-bootom"></br>      
@@ -675,7 +676,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                         </article>
 
                         <!--Piso Laminado Vision 8-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="vision">
                 <img src="imagens/visioncarvalhoandes.png" alt="Piso laminado cor carvalho andes"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     <div class="card-bootom"></br>      
@@ -703,7 +704,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                         <div class="product-grid" id="productGrid">
 
                         <!--Piso Laminado Smart 1-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="smart">
                 <img src="imagens/smartcarvalhonatural.png" alt="Piso laminado cor carvalho natural envernizado"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     <div class="card-bootom"></br>      
@@ -721,7 +722,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                         </article>
 
                         <!--Piso Laminado Smart 2-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="smart">
                 <img src="imagens/smartcarvalhoneblina.png" alt="Piso laminado cor carvalho neblina cinza"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     <div class="card-bootom"></br>      
@@ -739,7 +740,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                         </article>
 
                         <!--Piso Laminado Smart 3-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="smart">
                 <img src="imagens/smartcottage.png" alt="Piso laminado cor patina cottage"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     <div class="card-bootom"></br>      
@@ -757,7 +758,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                         </article>
 
                         <!--Piso Laminado Smart 4-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="smart">
                 <img src="imagens/smartmidnith.png" alt="Piso laminado cor carvalho natural midnight"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     <div class="card-bootom"></br>      
@@ -775,7 +776,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                         </article>
 
                         <!--Piso Laminado Smart 5-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="smart">
                 <img src="imagens/smartcarvalhocongelado.png" alt="Piso laminado cor carvalho congelado bege"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     <div class="card-bootom"></br>      
@@ -793,7 +794,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                         </article>
 
                         <!--Piso Laminado Smart 6-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="smart">
                 <img src="imagens/smartnovocarvalhoeverest.png" alt="Piso laminado cor  novo carvalho everest"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     <div class="card-bootom"></br>      
@@ -811,7 +812,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                         </article>
 
                         <!--Piso Laminado Smart 7-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="smart">
                 <img src="imagens/smartmiracosa.png" alt="Piso laminado cor miracosa"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     <div class="card-bootom"></br>      
@@ -829,7 +830,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                         </article>
 
                         <!--Piso Laminado Smart 8-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="smart">
                 <img src="imagens/smartcarvalhohavana.png" alt="Piso laminado cor havana"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     <div class="card-bootom"></br>      
@@ -847,7 +848,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                         </article>
 
                         <!--Piso Laminado Smart 9-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="smart">
                 <img src="imagens/smartcarvalhovanilla.png" alt="Piso laminado cor carvalho vanilla"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     <div class="card-bootom"></br>      
@@ -865,7 +866,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                         </article>
 
                         <!--Piso Laminado Smart 10-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="smart">
                 <img src="imagens/smartcarvalhobiscoito.png" alt="Piso laminado cor carvalho biscoito"onclick="abrirZoom(this.src)">
                 <div class="card-info">
 
@@ -891,7 +892,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                         </section>
 
                             <div class="lista-de-produto">
-                                <h2>Pisos Vinílicos</h2>
+                                <h2 id="pisos-vinilicos">Pisos Vinílicos</h2>
                             <article class="card produtos-item">
 
                                 <section id="produtos" class="produtos">
@@ -907,7 +908,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
             
  
                  <!--Piso Vinilico ecomex 1-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="ecomex">
                 <img src="imagens/vinilicoeconantes.png" alt="Piso vinilico cor nantes"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     
@@ -928,7 +929,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                         </article>
 
                         <!--Piso Vinilico ecomex 2-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="ecomex">
                 <img src="imagens/vinilicoecovienne.png" alt="Piso vinilico cor vienne"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     
@@ -949,7 +950,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                         </article>
 
                         <!--Piso Vinilico ecomex 3-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="ecomex">
                 <img src="imagens/vinilicoecoversalhes.png" alt="Piso vinilico cor versalhes"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     
@@ -970,7 +971,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                         </article>
 
                         <!--Piso Vinilico ecomex 4-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="ecomex">
                 <img src="imagens/vinilicoecolyon.png" alt="Piso vinilico  Cor Lyon"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     
@@ -991,7 +992,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                         </article>
   
                         <!--Piso Vinilico ecomex 5-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="ecomex">
                 <img src="imagens/vinilicoeconice.png" alt="Piso vinilico  Cor Nice"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     
@@ -1012,7 +1013,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                         </article>
 
                         <!--Piso Vinilico ecomex 6-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="ecomex">
                 <img src="imagens/vinilicoecobize.png" alt="Piso vinilico  Cor Bize"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     
@@ -1033,7 +1034,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                         </article>
 
                         <!--Piso Vinilico ecomex 7-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="ecomex">
                 <img src="imagens/vinilicoecodijon.png" alt="Piso vinilico  Cor Dijon"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     
@@ -1054,7 +1055,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                         </article>
 
                         <!--Piso Vinilico ecomex 8-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="ecomex">
                 <img src="imagens/vinilicoecolille.png" alt="Piso vinilico  Cor Lille"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     
@@ -1090,7 +1091,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                          <div class="product-grid" id="productGrid">
 
                             <!--Piso Vinilico Click 1-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="click">
                 <img src="imagens/vinilicoclickcannes.png" alt="Piso vinilico cor cannes"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     
@@ -1111,7 +1112,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                         </article>
 
                         <!--Piso Vinilico Click 2-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="click">
                 <img src="imagens/vinilicoclickparis.png" alt="Piso vinilico cor paris"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     
@@ -1132,7 +1133,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                         </article>
 
                         <!--Piso Vinilico Click 3-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="click">
                 <img src="imagens/vinilicoclicktoulon.png" alt="Piso vinilico cor toulon"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     
@@ -1153,7 +1154,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                         </article>
 
                         <!--Piso Vinilico Click 4-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="click">
                 <img src="imagens/vinilicoclickmarselha.png" alt="Piso vinilico cor marselha"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     
@@ -1174,7 +1175,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                         </article>
 
                         <!--Piso Vinilico Click 5-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="click">
                 <img src="imagens/vinilicoclickcalais.png" alt="Piso vinilico cor calais"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     
@@ -1195,7 +1196,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                         </article>
 
                         <!--Piso Vinilico Click 6-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="click">
                 <img src="imagens/vinilicoclickmetz.png" alt="Piso vinilico cor metz"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     
@@ -1216,7 +1217,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                         </article>
 
                         <!--Piso Vinilico Click 7-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="click">
                 <img src="imagens/vinilicoclicktroyes.png" alt="Piso vinilico cor troyes"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     
@@ -1237,7 +1238,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                         </article>
 
                 <!--Piso Vinilico Click 8-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="click">
                 <img src="imagens/vinilicoclicklyon.png" alt="Piso vinilico cor lyon"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     
@@ -1273,7 +1274,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                          <div class="product-grid" id="productGrid">
 
                             <!--Piso Vinilico Tarkett 1-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="tarkett">
                 <img src="imagens/tarkettcenteio.png" alt="Piso vinilico cor centeio"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     
@@ -1294,7 +1295,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                         </article>
 
                         <!--Piso Vinilico Tarkett 2-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="tarkett">
                 <img src="imagens/tarkettlavanda.png" alt="Piso vinilico cor lavanda"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     
@@ -1315,7 +1316,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                         </article>
 
                         <!--Piso Vinilico Tarkett 3-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="tarkett">
                 <img src="imagens/tarkettcalandula.png" alt="Piso vinilico cor calendula"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     
@@ -1337,7 +1338,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
 
                         
                         <!--Piso Vinilico Tarkett 4-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="tarkett">
                 <img src="imagens/tarkettpapoula.png" alt="Piso vinilico cor papoula"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     
@@ -1358,7 +1359,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                         </article>
 
                         <!--Piso Vinilico Tarkett 5-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="tarkett">
                 <img src="imagens/tarkettmenta.png" alt="Piso vinilico cor menta"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     
@@ -1379,7 +1380,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                         </article>
 
                         <!--Piso Vinilico Tarkett 6-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="tarkett">
                 <img src="imagens/tarkettprimula.png" alt="Piso vinilico cor camelia"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     
@@ -1400,7 +1401,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                         </article>
 
                          <!--Piso Vinilico Tarkett 7-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="tarkett">
                 <img src="imagens/tarkettroseo.png" alt="Piso vinilico cor roseo"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     
@@ -1421,7 +1422,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                         </article>
 
                         <!--Piso Vinilico Tarkett 8-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="tarkett">
                 <img src="imagens/tarkettgnaisse.png" alt="Piso vinilico cor gnaisse"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     
@@ -1442,7 +1443,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                         </article>
 
                         <!--Piso Vinilico Tarkett 9-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="tarkett">
                 <img src="imagens/tarkettlichia.png" alt="Piso vinilico cor lichia"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     
@@ -1464,7 +1465,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
 
 
                         <!--Piso Vinilico Tarkett 10-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="tarkett">
                 <img src="imagens/tarkettmate.png" alt="Piso vinilico cor mate"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     
@@ -1485,7 +1486,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                         </article>
 
                         <!--Piso Vinilico Tarkett 11-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="tarkett">
                 <img src="imagens/tarketttulipa.png" alt="Piso vinilico cor tulipa"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     
@@ -1506,7 +1507,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                         </article>
 
                          <!--Piso Vinilico Tarkett 11-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="tarkett">
                 <img src="imagens/tarkettgerbera.png" alt="Piso vinilico cor gerbera"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     
@@ -1528,7 +1529,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
 
 
                          <!--Piso Vinilico Tarkett 12-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="tarkett">
                 <img src="imagens/tarkettpeonia.png" alt="Piso vinilico cor peonia"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     
@@ -1549,7 +1550,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                         </article>
 
                         <!--Piso Vinilico Tarkett 13-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="tarkett">
                 <img src="imagens/tarkettlucerna.png" alt="Piso vinilico cor lucerna"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     
@@ -1588,7 +1589,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                          <div class="product-grid" id="productGrid">
 
                             <!--Rodapé eucatex  1-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="rodape">
                 <img src="imagens/rodapeeucatexumum.png" alt="Rodape eucatex"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     
@@ -1609,7 +1610,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                         </article>
 
                         <!--Rodapé eucatex  2-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="rodape">
                 <img src="imagens/rodapeeucatexdois.png" alt="Rodape eucatex"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     
@@ -1630,7 +1631,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                         </article>
 
                         <!--Rodapé eucatex  3-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="rodape">
                 <img src="imagens/rodapeeucatextres.png" alt="Rodape eucatex"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     
@@ -1651,7 +1652,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                         </article>
 
                         <!--Rodapé eucatex  4-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="rodape">
                 <img src="imagens/rodapeeucatexquatroquatro.png" alt="Rodape eucatex"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     
@@ -1672,7 +1673,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                         </article>
 
                         <!--Rodapé eucatex  5-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="rodape">
                 <img src="imagens/rodapeeucatexcinco.png" alt="Rodape eucatex"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     
@@ -1693,7 +1694,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                         </article>
 
                         <!--Rodapé eucatex  6-->
-            <article class="card produtos-item">
+            <article class="card produtos-item" id="rodape">
                 <img src="imagens/rodapeeucatexseis.png" alt="Rodape eucatex"onclick="abrirZoom(this.src)">
                 <div class="card-info">
                     
@@ -1725,7 +1726,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
                          <div class="product-grid" id="productGrid">
 
                             <!-- Card Rodapé Poliestireno 0 -->
-<article class="card img rodape">
+<article class="card img rodape" id="rodape">
     <img class="img-rodape" src="imagens/rodapepoliesterino.png" alt="Rodape poliestireno"onclick="abrirZoom(this.src)">
 
     <div class="card-info">
@@ -1773,7 +1774,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
              </article>
             
              <!-- Card Rodapé Poliestireno 2 -->
-<article class="card img rodape">
+<article class="card img rodape" id="rodape">
     <img class="img-rodape" src="imagens/rodapepoliesteriodois.png" alt="Rodape poliestireno"onclick="abrirZoom(this.src)">
 
 
@@ -1823,7 +1824,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
             
 
              <!-- Card Rodapé Poliestireno 3 -->
-<article class="card  rodape">
+<article class="card img rodape" id="rodape">
     <img class="img-rodape" src="imagens/rodapepoliesterinotres.png" alt="Rodape poliestireno"
     onclick="abrirZoom(this.src)">
 
@@ -1951,7 +1952,7 @@ Na Oliver Pisos, você encontra variedade, preço justo e a segurança de escolh
     <img id="zoomImg" class="zoom-modal-content">
 </div>
 
-<script src="script.js"></script>
+<script src="./script.js"></script>
 
 </body>
 </html>

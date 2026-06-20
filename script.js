@@ -91,3 +91,55 @@ function abrirZoom(src) {
 function fecharZoom() {
     document.getElementById("zoomModal").style.display = "none";
 }
+
+/* ============================= */
+/*          PESQUISA             */
+/* ============================= */
+
+/* ============================= */
+/* PESQUISA            */
+/* ============================= */
+
+function pesquisarProduto() {
+    const termo = document.getElementById("searchInput").value.toLowerCase().trim();
+
+    if (termo === "") return;
+
+    // O mapa liga o que o usuário digita (chave) ao ID exato que você tem no HTML (valor)
+   const mapa = {
+    "pisos laminados": "pisos-laminados",
+    "unilim": "unilim",
+    "click": "click",
+    "ecomex": "ecomex",
+    "impresive": "impresive",
+    "primiere": "primiere",
+    "eligna wide": "eligna-wide",
+    "vision": "vision",
+    "smart": "smart",
+    "tarkett": "tarkett",
+    "pisos vinilicos": "pisos-vinilicos",
+    "rodape": "rodape",
+    "rodapé": "rodape"
+};
+    
+    const destino = mapa[termo];
+
+    if (destino) {
+        const elemento = document.getElementById(destino);
+        if (elemento) {
+            elemento.scrollIntoView({ behavior: "smooth" });
+        } else {
+            console.error(`O ID "${destino}" está registrado no mapa, mas não foi encontrado no seu código HTML.`);
+            alert(`Erro: A seção "${destino}" não foi encontrada na página.`);
+        }
+    } else {
+        alert("Produto não encontrado! Verifique a grafia ou tente outro termo.");
+    }
+}
+
+// Evento para fazer a busca disparar ao pressionar a tecla Enter
+document.getElementById("searchInput").addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+        pesquisarProduto();
+    }
+});
