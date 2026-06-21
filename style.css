@@ -202,14 +202,13 @@ section.banner .info-imagem {
 }
 
 .carrinho {
-    position: static;
-    top: 150px;
-    right: 10px;
-    width: 95%;
-    margin: 20px auto;
+    position: relative; /* Garante que ele respeita o fluxo da página */
+    width: 100%;        /* Ocupa a largura total disponível no celular */
+    margin: 10px 0 20px 0; /* Margem para dar espaço dos elementos de cima e de baixo */
     background-color: #c6eaca;
     color: #116f0d;
-    z-index: 10;
+    padding: 15px;      /* Espaço interno para o texto não sufocar */
+    box-sizing: border-box;
 }
 
 .carrinho h3 {
@@ -371,22 +370,20 @@ footer {
         box-sizing: border-box;
     }
 
-    /* ===== CARRINHO COMPACTO ===== */
+    
    /* ===== CARRINHO COMPACTO ===== */
-.carrinho {
-    position: fixed; /* Muda de static para fixed */
-    bottom: 20px;    /* Alinha o carrinho na parte de baixo da tela */
-    right: 10px;     /* Mantém uma distância da lateral direita */
-    left: 10px;      /* Junto com o right, ajuda a centralizar ou esticar */
-    width: auto;     /* Deixe o width auto ou ajuste a porcentagem para não quebrar */
-    margin: 0;       /* Remove o margin auto que não funciona bem com fixed */
+    .carrinho {
+    position: fixed; /* Garante que ele respeita o fluxo da página */
+    width: 80%;        /* Ocupa a largura total disponível no celular */
+    margin: 10px 0 20px 0; /* Margem para dar espaço dos elementos de cima e de baixo */
     background-color: #c6eaca;
     color: #116f0d;
-    z-index: 1000;   /* Aumentei o z-index para garantir que ele fique na frente de TUDO */
-}
+    padding: 15px;      /* Espaço interno para o texto não sufocar */
+    box-sizing: border-box;
+    }
 
     .carrinho h3 {
-        font-size: 15px;
+        font-size: 5px;
         margin: 0 0 8px 0;
     }
 }
