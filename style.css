@@ -97,14 +97,13 @@ body {
 /* === CLASSE PARA IMAGENS DE INFORMAÇÕES (Tabelas) === */
 section.banner .info-imagem {
     display: block;
-    margin: 20px auto;
-    width: 100%;          
-    max-width: 100%;      
-
+    margin: 30px auto;
+    width: 100%;
+    max-width: 1000px; /* Máxima Largura da Tela */
     height: auto;
-    max-height: 550px;    
+    max-height: 450px;
+    object-fit: contain;
 }
-
 
 .card {
     text-align: center;
